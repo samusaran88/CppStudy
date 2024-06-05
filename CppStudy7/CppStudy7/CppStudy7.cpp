@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
 	//반복문
@@ -13,8 +13,57 @@ int main()
 	//   초기화      범위   연산
 	for (int i = 0; i < 5; i++)
 	{
-		cout << "벌써 수요일?! 어!?" << endl;
+		cout << "벌써 금요일?! 어!?" << endl;
 	}
+
+
+	int num;
+	cout << "입력 : ";
+	cin >> num;
+
+	for (int i = 1; i < 10; i++)
+	{
+		//      7        X      1     =       7 * 1
+		cout << num << " X " << i << " = " << num * i << endl;
+	}
+	 
+	/*
+	//2중 포문
+	for (int i = 1; i < 10; i++)
+	{
+		for (int j = 1; j < 10; j++)
+		{
+			cout << i << " X " << j << " = " << i * j << endl;
+		}
+	}
+	*/
+
+	//while문
+	//참일때만 동작한다
+	//기본적으로 무한루프다
+
+	/*
+	while (true)
+	{
+		cout << "꺼내주세요 어푸ㅜㅜㅜㅜ" << endl;
+	}
+	*/
+
+
+	//제어문
+	// 1. return	: 값을 반환하고 연산종료
+	// 2. break		: 연산을 종료하고 빠져나간다
+	// 3. continue	: 연산을 뛰어넘는다
+	// 4. go to		: 팀장님이 집으로 보낸다
+
+	//홀수만 출력하고픔
+	for (int i = 0; i < 10; i++)
+	{
+		if (i % 2 != 0) continue;
+		cout << i << endl;
+	}
+
+
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
